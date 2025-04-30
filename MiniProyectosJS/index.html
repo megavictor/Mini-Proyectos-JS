@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <h1>Random Color</h1>
+            <ul class="nav-links">
+                <li>
+                    <!-- Enlace -->
+                    <a href="index.html" id="rgbLink">RGB</a>
+                </li>
+                <li>
+                    <!-- Enlace -->
+                    <a href="index.html" id="hexLink">HEX</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Background Color : <span class="color-value" id="colorValue"></span></h2>
+            <!-- btn para acceder al DOM y btn-hero es un modificador -->
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-hero" id="changeColorBtn">Click me</button>
+        </div>
+    </main>
+    <script src="RandomColor.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color: #f1f5f8; /* Un gris claro de fondo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+.nav-center {
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 1rem 2rem; /* Espaciado interior */
+    max-width: auto; /* Ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.nav-center h1 {
+    color: hsl(205, 78%, 60%); /* Color similar al "Color Flipper" */
+    font-size: 2rem;
+}
+  
+.nav-links {
+    list-style-type: none; /* Quitar viñetas */
+    display: flex; /* Alinear los enlaces horizontalmente */
+}
+  
+.nav-links li {
+    margin: 0 1rem; /* Espacio entre los enlaces */
+    font-size: 1.5rem;
+}
+  
+.nav-links a {
+    color: hsl(0, 0%, 0%); /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    text-transform: capitalize; /* Primera letra en mayúscula */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Transición suave al pasar el ratón */
+}
+  
+.nav-links a:hover {
+    color: hsl(205, 100%, 41%); /* Cambiar color al pasar el ratón */
+}
+
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centrará el h2 y el botón dentro del container */
+  background-color: #222;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+}
+
+.container h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container .color-value {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.btn-hero {
+  background-color: transparent;
+  color: #222;
+  border: 2px solid #222;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem; /* Añade un poco de espacio entre el texto y el botón */
+}
+
+.btn-hero:hover {
+  background-color: #222;
+  color: white;
+}
